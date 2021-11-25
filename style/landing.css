@@ -141,11 +141,17 @@ main {
     height: 80px;
     background: #E6FFF9;
     border: 1px solid #02E2AC;
+    font-weight: bold;
+    color: #02E2AC;
     border-radius: 8px;
     outline: none;
     text-align: center;
     font-size: 30px;
 }
+
+.form input:focus::placeholder {
+    color: transparent;
+ }
 
 
 .form input::placeholder {
@@ -205,6 +211,13 @@ main {
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    transition: transform .2s;
+}
+
+.buttons-green-pill button:last-child:hover {
+    filter: brightness(.96);
+    /* opacity: 0.7; */
+    transform: translateY(-2px)
 }
 
 .buttons-green-pill button:last-child img {
@@ -268,10 +281,10 @@ main {
     .coordination-party-hero-description {
         width: 100%;
         padding: 0 4%;
-        
-        
+
+
     }
-    
+
     .coordination-party-hero-description .title {
         text-align: center;
         font-size: 36px;
