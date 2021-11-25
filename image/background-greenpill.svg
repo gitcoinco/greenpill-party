@@ -7,7 +7,7 @@
 
   @keyframes movePill {
     from {
-        transform: translateY(573px);
+        transform: translateY(620px);
     }
 }
 .greenpill-pattern {

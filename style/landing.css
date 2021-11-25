@@ -243,6 +243,10 @@ main {
 /* End */
 
 /* GreenPill */
+.background-bubble {
+    background-image: url(../image/background-top-bubble.svg);
+}
+
 .background-greenpill {
     background-image: url(../image/background-greenpill.svg);
 }
