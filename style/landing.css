@@ -77,6 +77,12 @@ main {
     margin-bottom: 80px;
 }
 
+h1{
+    font-size: 55px;
+    text-align: center;
+    margin: 0px auto 50px;
+}
+
 .coordination-party-hero-description {
     width: 472px;
     margin-right: -9rem;
@@ -155,6 +161,8 @@ main {
     outline: none;
     text-align: center;
     font-size: 30px;
+    font-family: Space Mono, sans-serif;
+    color:  #02E2AC;
 }
 
 
