@@ -17,8 +17,7 @@ body {
     font-family: 'Abel', sans-serif;
     max-width: 1600px;
     margin: auto;
-    background-color: #ffff;
-    color: #0E0333;
+    background-color: #0E0333;
 }
 
 @media (min-width: 1313px) {
@@ -72,9 +71,10 @@ main {
 .hero-container {
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 0px;
-    margin-bottom: 188px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 h1{
@@ -85,15 +85,18 @@ h1{
 
 .coordination-party-hero-description {
     width: 472px;
-    margin: 0 auto;
+    margin-right: -9rem;
+
 }
+
+
 
 .coordination-party-hero-description .title {
     font-family: 'Space Mono', monospace, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
-    color: #0E0333;
+    color: #FFDB4C;
     text-align: left;
     margin-bottom: 4px;
     line-height: 130%;
@@ -111,6 +114,10 @@ h1{
     padding-bottom: 154px;
     justify-content: center;
     align-items: center;
+}
+
+.gitcoin-brand a {
+    transition: transform .2s;
 }
 
 .gitcoin-brand img {
@@ -135,24 +142,36 @@ h1{
     font-size: 30px;
     line-height: 44px;
     text-align: center;
-    color: #0E0333;
+    color: #FFDB4C;
 }
 
-.form label.top {
-    margin-top: 52px;
+.form label:first-child {
+    margin-bottom: 54px;
 }
+
 
 .form input {
     width: 100%;
     height: 80px;
-    background: #E6FFF9;
+    background: transparent;
     border: 1px solid #02E2AC;
+    font-weight: bold;
+    color: #02E2AC;
     border-radius: 8px;
     outline: none;
     text-align: center;
     font-size: 30px;
     font-family: Space Mono, sans-serif;
     color:  #02E2AC;
+}
+
+
+.form input:nth-child(n+3) {
+    margin-top: 102px;
+}
+
+.form input:focus::placeholder {
+    color: transparent;
 }
 
 
@@ -213,6 +232,13 @@ h1{
     border-radius: 8px;
     cursor: pointer;
     border: none;
+    transition: transform .2s;
+}
+
+.buttons-green-pill button:last-child:hover,
+.gitcoin-brand a:hover {
+    filter: brightness(.96);
+    transform: translateY(-2px)
 }
 
 .buttons-green-pill button:last-child img {
@@ -257,6 +283,16 @@ h1{
 
     }
 
+    .coordination-party-hero-description {
+        width: 100%;
+        max-width: 575px;
+        margin-right: 0;
+    }
+
+    .coordination-party-hero-description .title {
+        text-align: center;
+    }
+
     .coordination-hero-description {
         margin: 0;
     }
@@ -277,13 +313,15 @@ h1{
 }
 
 @media (max-width: 560px) {
+    .hero-container {
+        margin-bottom: 40px;
+    }
+
     .coordination-party-hero-description {
         width: 100%;
         padding: 0 4%;
-        
-        
     }
-    
+
     .coordination-party-hero-description .title {
         text-align: center;
         font-size: 36px;
@@ -299,6 +337,14 @@ h1{
 
     .form label {
         width: 100%;
+        height: 100%;
+    }
+
+    .form label:first-child {
+        margin-bottom: 34px;
+    }
+    .form input:nth-child(n+3) {
+        margin-top: 60px;
     }
 }
 
