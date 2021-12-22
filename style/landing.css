@@ -20,31 +20,6 @@ body {
     background-color: #0E0333;
 }
 
-@media (min-width: 1313px) {
-    body {
-        font-size: 140%;
-
-    }
-}
-
-@media (max-width: 1600px) {
-    body {
-        font-size: 120%;
-    }
-}
-
-@media (max-width: 992px) {
-    body {
-        font-size: 110%;
-    }
-}
-
-@media (max-width: 688px) {
-    body {
-        font-size: 100%;
-    }
-}
-
 
 nav {
     display: flex;
@@ -77,10 +52,13 @@ main {
     margin-bottom: 80px;
 }
 
-h1{
-    font-size: 55px;
-    text-align: center;
+.green-pill-form-section h1 {
     margin: 0px auto 50px;
+    font-family: Space Mono;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFDB4C;
 }
 
 .coordination-party-hero-description {
@@ -88,8 +66,6 @@ h1{
     margin-right: -9rem;
 
 }
-
-
 
 .coordination-party-hero-description .title {
     font-family: 'Space Mono', monospace, sans-serif;
@@ -102,6 +78,8 @@ h1{
     line-height: 130%;
 }
 
+
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -109,12 +87,12 @@ h1{
 
 .gitcoin-brand {
     display: flex;
-
-    padding-top: 154px;
-    padding-bottom: 154px;
+    margin: 50px 0;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .gitcoin-brand a {
     transition: transform .2s;
@@ -162,7 +140,7 @@ h1{
     text-align: center;
     font-size: 30px;
     font-family: Space Mono, sans-serif;
-    color:  #02E2AC;
+    color: #02E2AC;
 }
 
 
@@ -261,6 +239,7 @@ h1{
     margin-right: 38px;
 }
 
+
 /* End */
 
 /* GreenPill */
@@ -343,6 +322,7 @@ h1{
     .form label:first-child {
         margin-bottom: 34px;
     }
+
     .form input:nth-child(n+3) {
         margin-top: 60px;
     }
