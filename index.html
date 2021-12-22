@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@gitcoin">
-<meta name="twitter:creator" content="@owocki">
-<meta name="twitter:title" content="GreenPill.Party">
-<meta name="twitter:description" content="Build a more solarpunk future by getting Green Pilled, pledge to support public goods + join the Green Pill Party today.">
-<meta name="twitter:image" content="/image/twitter.png">
-    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gitcoin" />
+    <meta name="twitter:creator" content="@owocki" />
+    <meta name="twitter:title" content="GreenPill.Party" />
+    <meta
+      name="twitter:description"
+      content="Build a more solarpunk future by getting Green Pilled, pledge to support public goods + join the Green Pill Party today."
+    />
+    <meta name="twitter:image" content="/image/twitter.png" />
 
     <title>GreenPill.Party</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,7 +58,7 @@
     <footer class="footer-container background-greenpill">
       <section class="green-pill-form-section">
         <div>
-          <h1>Make a Pledge:</h1 >
+          <h1>Make a Pledge:</h1>
           <form class="form">
             <label for="percentage">I've been GreenPilled! </label>
             <label for="percentage">I Pledge</label>
@@ -65,15 +67,15 @@
               id="percentage"
               name="percentage"
               placeholder="25%"
-              value="25%"
-            /> 
+              *
+            />
             <label for="percentage">of my Wealth Above </label>
             <input
               type="text"
               id="amount"
               name="amount"
               placeholder="$10mm"
-              value="$10mm"
+              va************
             />
             <label for="cause">to the cause of</label>
             <input
@@ -81,124 +83,128 @@
               id="cause"
               name="cause"
               placeholder="Public Goods Funding"
-              value="Public Goods Funding"
             />
 
             <div class="buttons-green-pill">
               <button type="button">
                 <img src="image/arrow-green-pill.svg" alt="arrow" />
-                <a href="javascript:alert('This is a simple tool created by the Gitcoin community to facilitate pledges to support a more Solarpunk world.');">What’s this?</a>
+                <a
+                  href="javascript:alert('This is a simple tool created by the Gitcoin community to facilitate pledges to support a more Solarpunk world.');"
+                  >What’s this?</a
+                >
               </button>
 
-              <button id="target" type="button"
- data-kinetics-attraction="" data-kinetics-attraction-chance=".99" data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7" 
-
-              >
+              <button id="target" type="button">
                 <img src="image/tweet-icon.svg" alt="tweet" />
                 <p>Tweet</p>
               </button>
             </div>
           </form>
         </div>
+        <div class="gitcoin-brand">
+          <a href="https://gitcoindao.com" target="_blank">
+            <img src="/image/gitcoindao_sign.svg" alt="gitcoinDAO" />
+          </a>
+          <!-- &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; -->
+          <a href="https://t.me/+g9TM8i7GpxAzMGUx" target="_blank"
+          >Join the Telegram</a
+          >
+        </div>
       </section>
-      <div class="gitcoin-brand">
-        <a href="https://gitcoindao.com" target="_blank">
-          <img
-            src="/image/gitcoindao_sign.svg"
-            alt="gitcoinDAO"
-          />
-        </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/+g9TM8i7GpxAzMGUx">Join the Telegram</a>
-      </div>
     </footer>
   </body>
 </html>
 
 <script>
-
-
-document.getElementById('target').onclick = function(e){
-  var X = document.getElementById('percentage').value;
-  var cause = document.getElementById('cause').value;
-  var Y = document.getElementById('amount').value;
-  var text = 'I pledge '+X+' of my wealth above '+Y+' to the cause of ' + cause;
-  var url = 'https://greenpill.party/'
-  document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
-}
-
-
+  document.getElementById("target").onclick = function (e) {
+    var X = document.getElementById("percentage").value;
+    var cause = document.getElementById("cause").value;
+    var Y = document.getElementById("amount").value;
+    var text =
+      "I pledge " +
+      X +
+      " of my wealth above " +
+      Y +
+      " to the cause of " +
+      cause;
+    var url = "https://greenpill.party/";
+    document.location.href =
+      "https://twitter.com/intent/tweet?text=" +
+      encodeURI(text) +
+      "&url=" +
+      encodeURI(url);
+  };
 </script>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const params = {
+      debug: false,
+      spring: {
+        tension: 8,
+        friction: 10,
+        randomTension: 50,
+        randomFriction: -18,
+        extendedRestDelay: 50,
+      },
+      canvas: {
+        handlePosition: true,
+      },
+      particles: {
+        count: 24,
+        sides: { min: 3, max: 5 },
+        sizes: { min: 1, max: 1 },
+        rotate: { speed: 1, direction: null },
+        mode: {
+          type: "wind-from-left",
+          speed: 0,
+          boundery: "endless",
+        },
+        parallex: {
+          layers: 3,
+          speed: 0.15,
+        },
+        attract: {
+          chance: 0.5,
+          force: 1,
+          grow: 2,
+          size: null,
+          type: "static",
+          speed: 1.5,
+          direction: -1,
+          radius: 1,
+        },
+        fill: {
+          colors: ["#f7ce46", "#67dfaf"],
+          toColors: ["#f7ce46", "#67dfaf"],
+          opacity: 1,
+        },
+        stroke: {
+          colors: [],
+          toColors: [],
+          width: [],
+          opacity: 1,
+        },
+      },
+    };
 
-document.addEventListener('DOMContentLoaded', function() {
-
-const params = {
-  "debug": false,
-  "spring": {
-    "tension": 8,
-    "friction": 10,
-    "randomTension": 50,
-    "randomFriction": -18,
-    "extendedRestDelay": 50
-  },
-  "canvas": {
-    "handlePosition": true
-  },
-  "particles": {
-    "count": 24,
-    "sides": {"min": 3, "max": 5},
-    "sizes": {"min": 1, "max": 1},
-    "rotate": {"speed": 1, "direction": null},
-    "mode": {
-      "type": "wind-from-left",
-      "speed": 0,
-      "boundery": "endless"
-    },
-    "parallex": {
-      "layers": 3,
-      "speed": 0.15
-    },
-    "attract": {
-      "chance": 0.5,
-      "force": 1,
-      "grow": 2,
-      "size": null,
-      "type": "static",
-      "speed": 1.5,
-      "direction": -1,
-      "radius": 1
-    },
-    "fill": { 
-      "colors": ["#f7ce46", "#67dfaf"], 
-      "toColors": ["#f7ce46", "#67dfaf"],
-      "opacity": 1
-    },
-    "stroke": { 
-      "colors": [], 
-      "toColors": [],
-      "width":[],
-      "opacity": 1
-    },
-    
-  }
-};
-
-  const kinetics = new Kinetics(params).interactionHook();
-
-});
-
-
+    const kinetics = new Kinetics(params).interactionHook();
+  });
 </script>
 
 <script src="https://unpkg.com/@drum-n-bass/kinetics"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPDC59RT5Y"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-DPDC59RT5Y"
+></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  gtag('config', 'G-DPDC59RT5Y');
+  gtag("config", "G-DPDC59RT5Y");
 </script>
-
