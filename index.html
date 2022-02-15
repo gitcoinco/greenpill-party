@@ -73,18 +73,12 @@
           <button id="hardcover" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
             data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
             data-kinetics-attraction-radius="1.7">
-            <a target="_blank"
-              href="https://www.amazon.com.br/Infinite-Machine-Crypto-hackers-Building-Internet/dp/0062886142/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1644880269&sr=8-7">
               <p>Hardcover</p>
-            </a>
           </button>
           <button id="epub" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
             data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
             data-kinetics-attraction-radius="1.7">
-            <a target="_blank"
-              href="https://www.amazon.com.br/Infinite-Machine-Crypto-hackers-Building-Internet-ebook/dp/B07X8HS2WC/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1644880269&sr=8-7">
               <p>Ebook</p>
-            </a>
           </button>
         </div>
       </div>
@@ -315,5 +309,13 @@
     document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
   }
   
+
+  document.getElementById('hardcover').onclick = function(e){
+    document.location.href="#"
+  }
+  
+  document.getElementById('epub').onclick = function(e){
+    document.location.href="#"
+  }
   
 </script>
