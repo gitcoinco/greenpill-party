@@ -340,8 +340,6 @@ button#greenpill:hover {
 }
 
 @media (max-width: 760px) {
-
-
     .form label {
         width: 500px;
         height: auto;
@@ -731,14 +729,9 @@ button a {
     }
 }
 
-
-  
-
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px),
        (max-width:820px),
-       (device-width: 768px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+       (device-width: 768px)  { 
     body {
         overflow-x: hidden;
     }
@@ -788,7 +781,7 @@ button a {
         margin-bottom: 60px;
     }
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1025px) { 
     body {
         overflow-x: hidden;
     }
@@ -857,12 +850,6 @@ button a {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
         only screen and (device-width: 768px) {
-
-    /* .navbar, .nav-item {
-        flex-direction: column;
-        width: 100%;
-    }             */
-    /* apple-ipad-air-4 */
     body {
         overflow-x: hidden;
     }
