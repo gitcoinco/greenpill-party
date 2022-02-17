@@ -260,6 +260,10 @@ h1{
 #telegram-section .call-action-info .title {
     text-align: center;
 }
+
+#telegram-section .call-to-action button, .coordination-party-hero-description button {
+    margin: 0;
+}
 /* End */
 
 /* GreenPill */
@@ -307,6 +311,12 @@ h1{
     margin-right: 230px
 }
 
+button#greenpill:hover {
+    filter: brightness(.96);
+    transform: translateY(-2px)
+}
+
+
 /* Responsive Style */
 @media (max-width: 1280px) {
 
@@ -349,6 +359,7 @@ h1{
     .coordination-party-hero-description .title {
         text-align: center;
         font-size: 36px;
+        margin: 0;
     }
 
     .form {
@@ -436,7 +447,11 @@ h1{
     cursor: pointer;
     border: none;
     transition: transform .2s;
-    margin-right: 55px;
+}
+
+
+#book-section.call-to-action button, .coordination-party-hero-description button {
+    margin-right: 45px;
 }
 
 .call-to-action button:hover {
@@ -981,10 +996,6 @@ button a {
 
     #telegram-section h1.title {
         font-size: 45px;
-    }
-
-    #telegram-section button {
-        margin-right: 0 ;
     }
 
     .link-preview {
