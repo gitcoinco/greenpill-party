@@ -91,7 +91,7 @@ h1{
 
 .coordination-party-hero-description {
     width: 472px;
-    margin: 0 auto;
+    margin: auto auto auto 14.5625rem;
 }
 
 .coordination-party-hero-description .title {
@@ -260,6 +260,10 @@ h1{
 #telegram-section .call-action-info .title {
     text-align: center;
 }
+
+#telegram-section .call-to-action button, .coordination-party-hero-description button {
+    margin: 0;
+}
 /* End */
 
 /* GreenPill */
@@ -297,6 +301,21 @@ h1{
   }
   
 
+  .link-preview {
+    color:rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 230px
+}
+
+button#greenpill:hover {
+    filter: brightness(.96);
+    transform: translateY(-2px)
+}
+
 /* Responsive Style */
 @media (max-width: 1280px) {
 
@@ -332,8 +351,7 @@ h1{
     .coordination-party-hero-description {
         width: 100%;
         padding: 0 4%;
-        
-        
+        margin: 0;
     }
     
     .coordination-party-hero-description .title {
@@ -384,7 +402,6 @@ h1{
 .call-to-action.title {
     font-size: 0.625rem;
     color: #0E0333;
-
     border: 1px solid #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -427,13 +444,17 @@ h1{
     cursor: pointer;
     border: none;
     transition: transform .2s;
-    margin-right: 55px;
 }
 
 .call-to-action button:hover {
     filter: brightness(.96);
     transform: translateY(-2px)
 }
+
+#book-section.call-to-action button, .coordination-party-hero-description button {
+    margin-right: 45px;
+}
+
 .call-action-wrapper-buttons {
     display: flex;
 }
@@ -582,10 +603,6 @@ button a {
     
     .logo img {
         width: 75px;
-    }
-
-    .navbar {
-        margin-bottom: 20px;
     }
 
     .navbar, .nav-item {
@@ -801,13 +818,14 @@ button a {
         margin-left: 7.5625rem;
     }
 
+    #telegram-section {
+        justify-content: center;
+    }
+
 }
 @media (min-width:1440px) { 
     body {
         overflow-x: hidden;
-    }
-    #book-section .title, #nft-section .title {
-        width: auto;
     }
 
     #book-section .wrapper-book {
@@ -836,11 +854,6 @@ button a {
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
         only screen and (device-width: 768px) {
 
-    /* .navbar, .nav-item {
-        flex-direction: column;
-        width: 100%;
-    }             */
-    /* apple-ipad-air-4 */
     body {
         overflow-x: hidden;
     }
@@ -868,10 +881,6 @@ button a {
         margin: 0;
         display: flex;
         justify-content: center;
-    }
-
-    #book-section .title {
-        width: auto;
     }
 
     #book-section .call-action-box {
@@ -943,7 +952,7 @@ button a {
     }
 
     #book-section .book-image {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     .wrapper {
@@ -983,6 +992,34 @@ button a {
     #telegram-section button {
         margin-right: 0 ;
     }
+
+    .link-preview {
+        color:rgba(0, 0, 0, 0.25);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-right: 100px;
+        margin-top: 23px;
+    }
     
+
+    .call-action-wrapper-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    #podcast-section .call-action-wrapper-buttons {
+        justify-content: left;
+    }
+    
+    .call-action-info {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        width: 100%;
+        padding: 0 10px ;
+    }
 
 }
