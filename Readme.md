@@ -17,7 +17,7 @@
 
 current version: ```0.0.1```
 
-- [Figma Version 1](https://www.figma.com/file/7XRRHI8YWorR8en4ih6VB5/greenpill?node-id=8%3A565)
+- [Figma Version 1](https://www.figma.com/file/20axb2cQq57EQFgQCKWiyy/greenpill-8x10-tradebook-(Copy)?node-id=0%3A1)
 
 ### Stack 
 
